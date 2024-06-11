@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Write a js object which contain array of three objects each object contain two properites name and age -->
+<!-- now sort and array value by age in descending order print name and age as per sorted age. array name student. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const student = [
+            {
+                name: "xyz",
+                age: 20
+            },
+            {
+                name: "abc",
+                age: 30
+            }, {
+                name: "def",
+                age: 50
+            }]
+
+        // for (let x = 0; x < student.length; x++) {
+        //     for (let y = 0; y < student.length; y++) {
+        //         if (student[x].age > student[y].age) {
+        //             var temp;
+        //             temp = student[y]
+        //             student[y] = student[x]
+        //             student[x] = temp
+        //         }
+        //     }
+        // }
+
+        // for (i = 0; i < student.length; i++) {
+        //     console.log(student[i].name)
+        //     console.log(student[i].age)
+        // }
+        student.sort((a,b) => b.age -a.age)
+        student.forEach(student => {
+            console.log(studnet.name)
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- <p id="demo"></p>
+    <script>
+        const myObj = {
+            name: "Harsh",
+            age: "19",
+            city: "ABD",
+            contact: [1, 2, 3]
+        }
+        document.getElementById("demo").innerHTML = "welcome" + " " + myObj.name + " Age: " + myObj.age + " City:" + myObj.city
+            + " Contact" + myObj.contact[0];
+    </script> -->
+
+
+    <script>
+        const txt = '{"name":"Rolex","age": 19,"city":"ABD"}'
+        const obj = JSON.parse(txt)
+        document.write(obj)
+        console.log(obj)
+
+        console.log(txt.name)
+        console.log(obj.name)
+
+    </script>
+    <!-- parse another method -->
+    <!-- <script> 
+        const txt2 = JSON.parse('{"name":"Rolex","age": 19,"city":"ABD"}')
+        console.log(txt2)
+        console.log(txt2.name)
+        
+    </script> -->
+   
+
+    <script>
+        const obj1 = {
+            name: "lju",
+            age: "30"
+        }
+        const txt1 = JSON.stringify(obj1)
+        console.log(txt1)
+    </script>
+</body>
+
+</html>

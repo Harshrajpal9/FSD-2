@@ -1,0 +1,26 @@
+<!-- Write a script to define to json object name div1 and div2 having an array to store the name of student.
+    at last both divison both should be visible with concate and alphabetic sorted..  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj1 = {
+            "div1": { "name": ["xab", "y", "z"] },
+            "div2": { "name": ["e", "a", "g"] }
+        }
+        const ans1 = obj1.div1.name
+        const ans2 = obj1.div2.name
+
+        var data = ans1.concat(ans2).sort()
+        document.write(data)
+    </script>
+</body>
+
+</html>
