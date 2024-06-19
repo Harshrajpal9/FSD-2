@@ -1,0 +1,21 @@
+// write a express js script to load student form using pug file which contains foll fields name ,email, course
+// radio button ce,it,cse once a form  submit data should be displayed in pug file in which 
+html 
+head 
+body 
+form(action="/data", method="get") 
+    label Name:
+    input(type="text",placeholder="Enter your name",name="name")
+    br
+    label Email: 
+    input(type="email",placeholder="Enter your email address",name="email")
+    br
+    label Course: 
+    input(type="radio",name="course" value="CE")
+    |CE
+    input(type="radio",name="course" value="CSE")
+    |CSE
+    input(type="radio",name="course" value="IT")
+    |IT
+    br
+    input(type="submit",value="Submit",name="submit")
